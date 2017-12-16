@@ -1,0 +1,138 @@
+html,body {
+				width: 100%;
+				height: 100%;
+			}
+			.mv_layout {
+				width: 100%;
+				height: 100%;
+			}
+			.mv_top {
+				width: 100%;
+				position: relative;
+			}
+			.mv_top img,
+			.mv_movie img {
+				width: 100%;
+				display: block;
+			}
+			.mv_music {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				width: 10%;
+				animation: music 15s linear infinite;
+			}
+			@keyframes music{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}
+			.mv_music img {
+				width: 100%;
+			}
+			.mv_column {
+				width: 100%;
+				height: 40px;
+				background-color: #d40e05;
+				position: relative;
+				line-height: 40px;
+			}
+			.mv_column span {
+				color: #fff;
+				font-size: 24px;
+				font-weight: normal;
+			}
+			.mv_column a {
+				font-size: 18px;
+			}
+			.mv_search {
+				position: absolute;
+				right: 55%;
+			}
+			.mv_leaveWords {
+				position: absolute;
+				left: 55%;
+			}
+			.mv_movie {
+				width: 25%;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+			.mv_content {
+				width: 100%;
+			}
+			.mv_title {
+				width: 100%;
+				position: relative;
+			}
+			.mv_title a {
+				display: block;
+				width: 50%;
+				height: 40px;
+				line-height: 30px;
+				font-size: 16px;
+				float: left;
+				text-align: center;
+				padding: 5px 0;
+				background-color: #e6e6e6;
+				color: #333;
+			}
+			.title_line {
+				position: absolute;
+				height: 30px;
+				width: 2px;
+				background-color: #fff;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 5px;
+			}
+			.mv_title a.active {
+				border-bottom: 3px solid #d40e05;
+			}
+			.mv_all {
+				width: 100%;
+				padding: 5px;
+				position: relative;
+				overflow: hidden;
+			}
+			.mv_all ul:nth-last-of-type {
+				display: none;
+			}
+			.mv_all li {
+				float: left;
+				width: 32%;
+				padding: 5px;
+				font-size: 14px;
+				border: 1px solid #d40e05;
+				margin-bottom: 5px;
+			}
+			.mv_all p,
+			.mv_all h4 {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.mv_all li:nth-of-type(3n - 1) {
+				margin: 0 5px;
+			}
+			.mv_all h4 {
+				text-align: center;
+			}
+			.mv_all a,
+			.mv_all img,
+			.mv_all span {
+				display: block;
+				width: 100%;
+			}
+			.mv_all span {
+				height: 40px;
+				background-color: #d40e05;
+				text-align: center;
+				line-height: 40px;
+				color: #fff;
+				border-radius: 5px;
+			}

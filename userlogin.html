@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="fonts/iconfont.css" />
+		<style>
+			html,body {
+				width: 100%;
+				height: 100%;
+			}
+			.qx_layout {
+				width: 100%;
+				height: 100%;
+			}
+			.qx_bg {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+			.qx_bg img {
+				width: 100%;
+				display: block;
+			}
+			.loginBox {
+				position: absolute;
+				width: 100%;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.loginBox h3 {
+				font-size: 40px;
+				font-family: '方正细黑一简体';
+				font-weight: normal;
+				color: #ffcf49;
+				margin-bottom: 60px;
+				text-align: center;
+			}
+			.userBox {
+				width: 100%;
+				padding: 0 30px;
+				text-align: center;
+			}
+			input::-webkit-input-placeholder {  
+				color: #fff; 
+				font-size: 14px;
+			}
+			.userName,.userPwd {
+				width: 100%;
+				height: 40px;
+				background-color: rgba(255, 255, 255, .4);
+				margin-bottom: 10px;
+				border: none;
+				color: #fff;
+				padding-left: 40px;
+			}
+			.loginBtn {
+				width: 70%;
+				height: 40px;
+				border: none;
+				color: #fff;
+				font-size: 18px;
+				letter-spacing: 2px;
+				border-radius: 20px;
+				margin: 30px;
+				background-color: #ffcf49;
+			}
+			.line {
+				border-top: 1px solid #ffcf49;
+				margin: 0 25px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			.line a {
+				color: #ffcf49;
+				font-size: 16px;
+			}
+			.userBox span {
+				position: absolute;
+				font-size: 20px;
+				font-weight: normal;
+				color: #ffcf49;
+				left: 40px;
+				padding-top: 10px;	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="qx_layout">
+			<div class="qx_bg">
+				<img src="images/timg.jpg" alt="" />
+				<div class="loginBox">
+					<h3>Q享掌柜</h3>
+					<form class="userBox" action="">
+						<span class="iconfont icon-yonghu"></span><input class="userName" type="text" placeholder="手机号/用户名"/>
+						<span class="iconfont icon-mima"></span><input class="userPwd" type="password" placeholder="密码" />
+						<input class="loginBtn" type="button" value="登录" />
+					</form>
+					<div class="line">
+						<a href="javascript:;">忘记密码？</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

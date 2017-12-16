@@ -1,0 +1,42 @@
+ul,li,img,div,input,form,body,a,p,span,h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+input {
+	border: none;
+	outline: none;
+	border: 1px solid #ccc;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+}
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+.b_bottom {
+	border-bottom: 1px solid #ccc;
+}
+.b_left {
+	border-left: 1px solid #ccc;
+}
+.b_right {
+	border-right: 1px solid #ccc;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
